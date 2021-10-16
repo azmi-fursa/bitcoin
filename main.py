@@ -11,20 +11,23 @@ Bitcoin
 </title>
 </head>
 <body>
-<h1>
-Bitcoin Values
+<h1 style="text-align:center">
+BITCOIN --> USD ($) CONVERTER
 </h1>
 <p>
-This is a Web Application that shows the bitcoin latest value and average over the last 10 minutes
+Welcome!! this app is here to help people who would like to purchase bitcoins.
+here you can check the value of Bitcoin in USD ($).
+you can also check the average value of Bitcoin in USD in the last 10 minutes
 </p>
 <h2>
-The current BTC value in USD:
+To buy one BTC (BitCoin) in USD it would cost you:
 $$replace_this1$$
 </h2>
 <h2>
-The Average value of BTC over the last 10 minutes in USD:
+The price of BTC is forever changing, here is the average of its value in USD over the last 10 minutes:
 $$replace_this2$$
 </h2>
+<img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F908633080%2F960x0.jpg%3Ffit%3Dscale" width="250" height="150">
 </body>
 </html>"""
 
