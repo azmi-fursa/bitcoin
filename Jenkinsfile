@@ -1,8 +1,10 @@
 pipeline {
     agent any
-environment {
-		DOCKERHUB_CREDENTIALS=credentials('dockerhub-azmiabu')
-	}
+environment { 
+        registry = "azmiabu/bitcoin" 
+        registryCredential = 'azmiabu' 
+        dockerImage = '' 
+    }
         stages {
 		stage('Building our image') {
             steps{
