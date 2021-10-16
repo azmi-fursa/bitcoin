@@ -9,7 +9,7 @@ environment {
 		stage('Building our image') {
             steps{
                 script {
-                    dockerImage = sudo -s docker build -t bitcoin-flask .
+                    dockerImage = docker.build registry + ":$BUILD_NUMBER"
          	       }
             	 }
         	}
