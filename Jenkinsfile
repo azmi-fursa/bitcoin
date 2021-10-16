@@ -23,5 +23,10 @@ pipeline {
 			    sh 'sudo docker tag bitcoin-flask azmiabu/bitcoin-flask'
 			}
 		}
+	stage('Push') {
+			steps {
+				sh 'sudo docker push azmiabu/bitcoin-flask'
+			}
+        }
  	}
 }
