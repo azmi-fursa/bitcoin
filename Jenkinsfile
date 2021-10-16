@@ -19,7 +19,7 @@ pipeline {
 		} 
 	stage('Push') {
 			steps {
-				sh 'sudo docker push azmiabu/bitcoin-flask'
+				sh 'sudo docker push bitcoin-flask'
 			}
         }
  	}
