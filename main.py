@@ -1,8 +1,7 @@
 import requests
 from flask import Flask
 
-
-# This is the HTML Template for the web application
+#########HTML FORMAT USED IN PYTHON CODE ############
 template = """<!DOCTYPE html>
 <html>
 <head>
@@ -30,27 +29,26 @@ $$replace_this2$$
 <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F908633080%2F960x0.jpg%3Ffit%3Dscale" width="250" height="150">
 </body>
 </html>"""
+########## END OF HTML FORMAT IN PYTHON ##########
 
 app = Flask(__name__)
 
-## the URL for the crypto currency API
+## the api used is cryptocompare:
 URL = "https://min-api.cryptocompare.com/data/v2/histominute?fsym={}&tsym={}&limit={}"
 
 
-# calculate 
+##function to calculate its value from the given API
 def get_price(coin,currency,limit):
     sum = 0
     try:
         response = requests.get(URL.format(coin,currency,limit)).json()
         for i in range(10):
             sum += response['Data']['Data'][i]['close']
-     #   data = {'price': response['Data']['Data'][9]['close'], 'average': sum/10}
         return response['Data']['Data'][9]['close'],sum/10
     except:
         return False
 
-
-#currencyPrice = get_price("BTC","USD","10")
+##to enter the website we used app.route
 @app.route("/")
 def hello_world():
     currentprice,average= get_price("BTC","USD","10")
@@ -60,3 +58,4 @@ def hello_world():
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0',port=80)
+###running on port 80
