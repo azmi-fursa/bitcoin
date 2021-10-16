@@ -4,7 +4,7 @@ pipeline {
 		stage('Building our image') {
             steps{
                 script {
-                    sh 'docker build -t bitcoin-flask .'
+                    sh 'sudo docker build -t bitcoin-flask .'
          	       }
             	 }
         	}
