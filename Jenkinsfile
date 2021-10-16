@@ -17,10 +17,11 @@ pipeline {
 				sh 'echo $DOCKERHUB_CREDENTIALS_PSW | sudo docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
 			}
 		} 
-	stage('Push') {
+	stage('Tag') {
+
 			steps {
-				sh 'sudo docker push bitcoin-flask'
+			    sh 'sudo docker tag hw-app ahmadsk/hw-app'
 			}
-        }
+		}
  	}
 }
