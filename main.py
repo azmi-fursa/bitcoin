@@ -15,18 +15,24 @@ BITCOIN --> USD ($) CONVERTER
 </h1>
 <p>
 Welcome!! this app is here to help people who would like to purchase bitcoins.
+</p>
+<p>
 here you can check the value of Bitcoin in USD ($).
+</p>
+<p>
 you can also check the average value of Bitcoin in USD in the last 10 minutes
 </p>
 <h2>
 To buy one BTC (BitCoin) in USD it would cost you:
 $$replace_this1$$
-</h2>
+$</h2>
 <h2>
 The price of BTC is forever changing, here is the average of its value in USD over the last 10 minutes:
 $$replace_this2$$
-</h2>
-<img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F908633080%2F960x0.jpg%3Ffit%3Dscale" width="250" height="150">
+$</h2>
+<div>
+<img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F908633080%2F960x0.jpg%3Ffit%3Dscale" width="1500" height="500">
+</div>
 </body>
 </html>"""
 ########## END OF HTML FORMAT IN PYTHON ##########
