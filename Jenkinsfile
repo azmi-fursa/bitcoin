@@ -1,5 +1,8 @@
 pipeline {
     agent any
+environment {
+		DOCKERHUB_CREDENTIALS=credentials('dockerhub-azmiabu')
+	}
         stages {
 		stage('Building our image') {
             steps{
