@@ -20,7 +20,7 @@ pipeline {
 	stage('Tag') {
 
 			steps {
-			    sh 'sudo docker tag hw-app ahmadsk/hw-app'
+			    sh 'sudo docker tag bitcoin-flask azmiabu/bitcoin-flask'
 			}
 		}
  	}
